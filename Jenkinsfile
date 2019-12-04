@@ -13,7 +13,7 @@ pipeline {
        steps {
            
          sh "ansible --version"
-         sh "ansible-playbook vcn.yml --syntax-check"
+         sh "ansible-playbook vcn.yaml --syntax-check"
          }
        }
             
@@ -27,7 +27,7 @@ pipeline {
       stage('Ansible Deploy') {
        steps {
            
-         sh "ansible-playbook vcn.yml -vvv"
+         sh "ansible-playbook vcn.yaml -vvv"
          }
        }
     }
