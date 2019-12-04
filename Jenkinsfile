@@ -17,7 +17,7 @@ pipeline {
          }
        }
             
-        stage('TF Approve') {
+        stage('Approve') {
        steps {
            
           input('Do you want to proceed?')
