@@ -3,7 +3,7 @@
    hosts: localhost
    tasks: 
     - name: creation of a VCN
-      oci_vcn
+      oci_vcn:
        compartment_id: "ocid1.compartment.oc1..aaaaaaaayetsbxz3kb6qcwcydoxov6hgc24pqozun7aygvxhdzhbuqusd4aq"
        display_name: "Created using Jenkins"
        cidr_block: "10.0.0.0/16"
