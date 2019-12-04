@@ -12,7 +12,7 @@ pipeline {
       stage('Ansible version') {
        steps {
            
-         sh "ansile --version"
+         sh "ansible --version"
          sh "ansible-playbook vcn.yml --syntax-check"
          }
        }
